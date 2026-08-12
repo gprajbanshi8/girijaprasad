@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact | ICT Hub</title><link rel="stylesheet" href="css/style.css"></head>
+<body>
+<header class="navbar"><a class="logo" href="index.html">ICT<span>Hub</span></a>
+<nav><a href="index.html">Home</a><a href="about.html">About Me</a><a href="lessons.html">Lessons</a><a href="resources.html">Resources</a><a class="active" href="contact.html">Contact</a></nav></header>
+<section class="page-header"><p class="tag">GET IN TOUCH</p><h1>Contact Me</h1><p>Have a question about an ICT lesson? Send a message.</p></section>
+<main class="section contact-grid">
+<div class="contact-info"><h2>Let's Connect</h2><p>I welcome questions, suggestions and ideas related to ICT learning.</p>
+<div class="contact-item"><span>📧</span><div><strong>Email</strong><p>gprajbanshi8@gmail.com</p></div></div>
+<div class="contact-item"><span>📍</span><div><strong>Location</strong><p>BIRATNAGAR, Nepal</p></div></div>
+<div class="contact-item"><span>💻</span><div><strong>Focus</strong><p>ICT Education & Digital Skills</p></div></div></div>
+<form class="contact-form" onsubmit="sendMessage(event)"><input type="text" placeholder="Your Name" required><input type="email" placeholder="Your Email" required><input type="text" placeholder="Subject" required><textarea rows="6" placeholder="Write your message..." required></textarea><button class="btn" type="submit">Send Message</button><p id="formMessage"></p></form>
+</main>
+<footer><p>© 2026 GP | ICT Instructional Website</p></footer>
+<script>
+function sendMessage(e){e.preventDefault();document.getElementById('formMessage').textContent='Thank you! Your message has been prepared successfully.';}
+</script>
+</body>
+</html>
