@@ -1,0 +1,351 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Contact the Author</title>
+
+    <style>
+
+        /* ---------- BASIC ---------- */
+
+        * {
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f2f6fc;
+            color: #333;
+        }
+
+
+        /* ---------- HEADER ---------- */
+
+        header {
+            background-color: #6b571e;
+;
+            color: white;
+            text-align: center;
+            padding: 30px 15px;
+        }
+
+        header h1 {
+            margin: 0 0 8px;
+        }
+
+        header p {
+            margin: 0;
+        }
+
+
+        /* ---------- MAIN ---------- */
+
+        .container {
+            width: 90%;
+            max-width: 900px;
+            margin: 35px auto;
+        }
+
+
+        /* ---------- CONTACT BOX ---------- */
+
+        .contact-box {
+            background-color: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 3px 12px #ccc;
+        }
+
+        .contact-box h2 {
+            text-align: center;
+            color: #2d6cdf;
+            margin-top: 0;
+        }
+
+        .contact-box > p {
+            text-align: center;
+            line-height: 1.6;
+        }
+
+
+        /* ---------- CONTACT INFORMATION ---------- */
+
+        .contact-info {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 15px;
+            margin: 25px 0;
+        }
+
+        .info {
+            background-color: #f2f6fc;
+            padding: 20px;
+            text-align: center;
+            border-radius: 8px;
+        }
+
+        .info h3 {
+            color: #2d6cdf;
+            margin: 5px 0 10px;
+        }
+
+        .info p {
+            margin: 0;
+            word-break: break-word;
+        }
+
+
+        /* ---------- FORM ---------- */
+
+        form {
+            margin-top: 25px;
+        }
+
+        label {
+            display: block;
+            margin: 12px 0 6px;
+            font-weight: bold;
+        }
+
+        input,
+        textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-family: Arial, sans-serif;
+            font-size: 15px;
+        }
+
+        textarea {
+            height: 130px;
+            resize: vertical;
+        }
+
+        input:focus,
+        textarea:focus {
+            outline: none;
+            border-color: #2d6cdf;
+        }
+
+        button {
+            margin-top: 18px;
+            width: 100%;
+            padding: 12px;
+            background-color: #2d6cdf;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #174a9c;
+        }
+
+
+        /* ---------- SOCIAL ---------- */
+
+        .social {
+            text-align: center;
+            margin-top: 30px;
+        }
+
+        .social h3 {
+            color: #2d6cdf;
+        }
+
+        .social a {
+            display: inline-block;
+            background-color: #2d6cdf;
+            color: white;
+            text-decoration: none;
+            padding: 9px 16px;
+            margin: 5px;
+            border-radius: 6px;
+        }
+
+        .social a:hover {
+            background-color: #174a9c;
+        }
+
+
+        /* ---------- FOOTER ---------- */
+
+        footer {
+            background-color: #222;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 40px;
+        }
+
+
+        /* ---------- RESPONSIVE ---------- */
+
+        @media (max-width: 700px) {
+
+            .contact-info {
+                grid-template-columns: 1fr;
+            }
+
+            .contact-box {
+                padding: 20px;
+            }
+
+        }
+
+    </style>
+
+</head>
+
+
+<body>
+
+
+    <!-- HEADER -->
+
+    <header>
+
+        <h1>Contact the Author</h1>
+
+        <p>Have a question or suggestion? Get in touch with me.</p>
+
+    </header>
+
+
+    <!-- MAIN CONTENT -->
+
+    <main class="container">
+
+
+        <section class="contact-box">
+
+            <h2>📩 Get In Touch</h2>
+
+            <p>
+                Feel free to contact me if you have any questions,
+                suggestions, or feedback about this website.
+            </p>
+
+
+            <!-- Contact Information -->
+
+            <div class="contact-info">
+
+
+                <div class="info">
+
+                    <h3>📧 Email</h3>
+
+                    <p>gprajbanshi8@email.com</p>
+
+                </div>
+
+
+                <div class="info">
+
+                    <h3>📱 Phone</h3>
+
+                    <p>+977 98XXXXXXXX</p>
+
+                </div>
+
+
+                <div class="info">
+
+                    <h3>📍 Location</h3>
+
+                    <p>Nepal</p>
+
+                </div>
+
+
+            </div>
+
+
+            <!-- Contact Form -->
+
+            <form>
+
+                <label for="name">
+                    Your Name
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your name"
+                >
+
+
+                <label for="email">
+                    Your Email
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                >
+
+
+                <label for="message">
+                    Your Message
+                </label>
+
+                <textarea
+                    id="message"
+                    placeholder="Write your message..."
+                ></textarea>
+
+
+                <button type="submit">
+                    Send Message
+                </button>
+
+            </form>
+
+
+            <!-- Social Media -->
+
+            <div class="social">
+
+                <h3>Connect With Me</h3>
+
+                <a href="https://www.facebook.com/share/1HpoffecZ9/">Facebook</a>
+
+            <a href="https://www.instagram.com/rajbanshi.gp?stkn=MWV3OHgybXoyY3ZwdQ==">Instagram</a>
+
+            <a href="https://www.youtube.com/@technicalbus">Youtube</a>
+            <a href="https://www.tiktok.com/@yycfuuj?_r=1&_t=ZS-99yaHmw6bJf">TikTok</a>
+
+            </div>
+
+
+        </section>
+
+    </main>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <p>
+            © 2026 Student Notes
+        </p>
+
+    </footer>
+
+
+</body>
+
+</html>
